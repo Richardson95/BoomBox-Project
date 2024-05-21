@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoomBox</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <body id="top">
+        <header class="header" data-header>
+          <div class="container">
+            <a href="#" class="logo"><span>BoomBox.</span></a>
+            <nav class="navbar container" data-navbar>
+              <ul class="navbar-list">
+                <li>
+                  <a href="dashboard.html" class="navbar-link" data-nav-link>Dashboard</a>
+                </li>
+    
+                <li>
+                  <a href="referral.html" class="navbar-link" data-nav-link
+                    >Referral</a
+                  >
+                </li>
+    
+                <li>
+                  <a href="deposit.html" class="navbar-link" data-nav-link>Deposit</a>
+                </li>
+    
+                <li>
+                  <a href="withdraw.html" class="navbar-link" data-nav-link
+                    >Withdrawal</a
+                  >
+                </li>
+    
+                <li>
+                  <a href="notification.html" class="navbar-link" data-nav-link>Notification</a>
+                </li>
+
+                <li>
+                  <a href="profile.html" class="navbar-link" data-nav-link>Profile</a>
+                </li>
+
+                <li>
+                  <a href="signup.html" class="navbar-link" data-nav-link>Log-Out</a>
+                </li>
+              </ul>
+            </nav>
+
+            <button
+            class="nav-toggle-btn"
+            aria-label="Toggle menu"
+            data-nav-toggler
+          >
+            <ion-icon name="close-outline" class="close"
+              ><i class="fa-solid fa-xmark"></i
+            ></ion-icon>
+            <ion-icon name="menu-outline" class="open"
+              ><i class="fa-solid fa-bars"></i
+            ></ion-icon>
+          </button>
+        </div>
+      </header>
+    
+    <div class="getter">
+        <div class="notificationGetter">
+            <header>
+                <div class="notificationHeader">
+                    <h1>Notifications</h1>
+                    <span id="num-of-notif">2</span>
+                </div>
+                <p id="mark-as-read">Mark All as Read</p>
+            </header>
+            <main>
+                <div class="notificationCard unread">
+                    <img src="Images/medium-shot-male-flight-attendant-posing_23-2150312701.avif" alt="photo">
+                    <div class="description">
+                        <p>Hi Doe, I'm BoomBox, I am from the United States. I am a Software Developer.</p>
+                        <p id="notif-time">1m ago</p>
+                    </div>
+                </div>
+                <div class="notificationCard unread">
+                    <img src="Images/banner.jpg" alt="photo">
+                    <div class="description">
+                        <p>Hi Doe, I'm BoomBox, I am from the United States. I am a Software Developer.</p>
+                        <p id="notif-time">1m ago</p>
+                    </div>
+                </div>
+                <div class="notificationCard unread">
+                    <img src="Images/young-african-american-man-holding-600nw-2048211917.webp" alt="photo">
+                    <div class="description">
+                        <p>Hi Doe, I'm BoomBox, I am from the United States. I am a Software Developer.</p>
+                        <p id="notif-time">1m ago</p>
+                    </div>
+                </div>
+                <div class="notificationCard">
+                    <img src="Images/medium-shot-male-flight-attendant-posing_23-2150312701.avif" alt="photo">
+                    <div class="description">
+                        <p>Hi Doe, I'm BoomBox, I am from the United States. I am a Software Developer.</p>
+                        <p id="notif-time">1m ago</p>
+                    </div>
+                </div>
+                <div class="notificationCard">
+                    <img src="Images/medium-shot-male-flight-attendant-posing_23-2150312701.avif" alt="photo">
+                    <div class="description">
+                        <p>Hi Doe, I'm BoomBox, I am from the United States. I am a Software Developer.</p>
+                        <p id="notif-time">1m ago</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script>const unReadMessages = document.querySelectorAll('.unread');
+        const unReadMessagesCount = document.getElementById('num-of-notif');
+        const markAll = document.getElementById('mark-as-read');
+
+        unReadMessagesCount.innerText = unReadMessages.length;
+
+        unReadMessages.forEach((message) => {
+            message.addEventListener('click', () => {
+                message.classList.remove('unread');
+                const newUnreadMessages = document.querySelectorAll('.unread');
+                unReadMessagesCount.innerText = newUnreadMessages.length;
+            });
+        });
+
+        markAll.addEventListener('click', () => {
+            unReadMessages.forEach((message) => {
+                message.classList.remove('unread');
+            });
+            unReadMessagesCount.innerText = 0;
+        });</script>
+        <script src="script.js"></script>
+</body>
+</html>
