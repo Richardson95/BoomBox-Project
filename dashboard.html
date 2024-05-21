@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BoomBox</title>
+
+    <link rel="shortcut icon" type="Images/svg+xml" href="Images/logo.jpg" />
+    <meta
+      name="viewport"
+      content="width=device-width, inherit-scale=1,  maximum-scale=10, user-scalable=yes"
+    />
+    <title>BoomBox</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Leahue+Spartan:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+    <body id="top">
+        <header class="header" data-header>
+          <div class="container">
+            <a href="#" class="logo"><span>BoomBox.</span></a>
+            <nav class="navbar container" data-navbar>
+              <ul class="navbar-list">
+                <li>
+                  <a href="dashboard.html" class="navbar-link" data-nav-link>Dashboard</a>
+                </li>
+    
+                <li>
+                  <a href="referral.html" class="navbar-link" data-nav-link
+                    >Referral</a
+                  >
+                </li>
+    
+                <li>
+                  <a href="deposit.html" class="navbar-link" data-nav-link>Deposit</a>
+                </li>
+    
+                <li>
+                  <a href="withdraw.html" class="navbar-link" data-nav-link
+                    >Withdrawal</a
+                  >
+                </li>
+    
+                <li>
+                  <a href="notification.html" class="navbar-link" data-nav-link>Notification</a>
+                </li>
+
+                <li>
+                  <a href="profile.html" class="navbar-link" data-nav-link>Profile</a>
+                </li>
+
+                <li>
+                  <a href="signup.html" class="navbar-link" data-nav-link>Log-Out</a>
+                </li>
+              </ul>
+            </nav>
+
+            <button
+          class="nav-toggle-btn"
+          aria-label="Toggle menu"
+          data-nav-toggler
+        >
+          <ion-icon name="close-outline" class="close"
+            ><i class="fa-solid fa-xmark"></i
+          ></ion-icon>
+          <ion-icon name="menu-outline" class="open"
+            ><i class="fa-solid fa-bars"></i
+          ></ion-icon>
+        </button>
+      </div>
+    </header>
+
+<div class="welcome-msg">
+    <h2>Hello, John Doe!</h2>
+    <p>Welcome to BoomBox, where goals are achieved. We hope you have a great investment period.</p>
+</div>
+
+<marquee behavior="scroll" direction="left">Total Investors: 3,000 | Total Amount Deposited: $300,000 | Total Amount Deposited: $300,000 | Total Amount Deposited: $300,000 | Total Amount Deposited: $300,000 | Total Amount Deposited: $300,000 | Total Withdrawn: $700,000 | Total Users: 8,000</marquee>
+
+<section class="dashboard">
+    <div class="card">
+        <h3>Ongoing Investment</h3>
+        <p>$500,000</p>
+    </div>
+    <div class="card">
+        <h3>Total Deposited</h3>
+        <p>$1,000,000</p>
+    </div>
+    <div class="card">
+        <h3>Matured Investment</h3>
+        <p>$300,000</p>
+    </div>
+</section>
+
+<div class="chart-container">
+  <canvas id="forex-chart"></canvas>
+</div>
+
+<div class="referral-section">
+  <div class="cards">
+      <h2>Your Referral Code:</h2>
+      <p id="referral-code">SH87A0B845KKJG</p>
+      <button id="copy-button">Copy Referral Code</button>
+  </div>
+  <div class="cards">
+      <h2>Share Referral Code:</h2>
+      <p>.. to make WAY MORE.</p><br>
+      <div class="share-buttons">
+          <a href="#" id="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" id="twitter"><i class="fa-brands fa-x-twitter"></i> </a>
+          <a href="#" id="instagram"><i class="fa-brands fa-instagram"></i> </a>
+          <a href="#" id="facebook"><i class="fa-brands fa-facebook"></i> </a>
+      </div>
+  </div>
+</div>
+
+
+<div class="package-section">
+  <a href="deposit.html" class="card">
+      <h2>Stage 1</h2>
+      <p class="cost">Cost: $100</p>
+      <div class="returns">
+          <h3>Returns</h3>
+          <p>10%</p>
+      </div>
+      <button id="copy-button">Start</button>
+  </a>
+<a href="deposit.html" class="card">
+  <h2>Stage 2</h2>
+  <p class="cost">Cost: $100</p>
+  <div class="returns">
+      <h3>Returns</h3>
+      <p>10%</p>
+  </div>
+  <button id="copy-button">Start</button>
+</a>
+  <a href="deposit.html" class="card">
+      <h2>Stage 3</h2>
+      <p class="cost">Cost: $200</p>
+      <div class="returns">
+          <h3>Returns</h3>
+          <p>15%</p>
+      </div>
+      <button id="copy-button">Start</button>
+  </a>
+  <a href="deposit.html" class="card">
+      <h2>Stage 4</h2>
+      <p class="cost">Cost: $300</p>
+      <div class="returns">
+          <h3>Returns</h3>
+          <p>20%</p>
+      </div>
+      <button id="copy-button">Start</button>
+  </a>
+  <a href="deposit.html" class="card">
+      <h2>Stage 5</h2>
+      <p class="cost">Cost: $400</p>
+      <div class="returns">
+          <h3>Returns</h3>
+          <p>25%</p>
+      </div>
+      <button id="copy-button">Start</button>
+  </a>
+</div>
+
+<!------------------------------------ CONTACT US  --------------------------------->
+
+
+
+<section class="section contact" id="contact" aria-label="contact">
+  <div class="container">
+
+    <ul class="contact-list">
+     
+      <ul class="contact-list">
+        <li class="contact-item">
+          <div class="contact-card">
+            <div class="card-icon">
+              <ion-icon name="mail-outline" aria-label="true"><i class="fa-regular fa-envelope"></i></ion-icon>
+              <div class="card-content">
+                <h3 class="h3 card-title">Mail Here</h3>
+                <a href="mailto:changejunta@gmail.com" class="card-link">Mail BoomBox</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="contact-card">
+            <div class="card-icon">
+              <ion-icon name="telegram-outline" aria-label="true"><i class="fa-brands fa-telegram"></i></ion-icon>
+                      <div class="card-content">
+                        <h3 class="h3 card-title">Reach Here</h3>
+                        <a href="mailto:changejunta@gmail.com" class="card-link">Telegram</a>
+            </div>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="contact-card">
+            <div class="card-icon">
+              <ion-icon name="telegram-outline" aria-label="true"><i class="fa-brands fa-facebook-messenger"></i></ion-icon>
+              <div class="card-content">
+                <h3 class="h3 card-title">Chat Here</h3>
+                <a href="mailto:changejunta@gmail.com" class="card-link">Facbook</a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+  </div>
+</section>
+
+
+<!------------------------------------ FOOTER --------------------------------->
+
+<footer class="footer">
+  <div class="contact">
+    <p class="copyright">
+      &copy; 2023 All Rights Reserved by
+      <a href="" class="copyright-link">BoomBox</a>
+    </p>
+  </div>
+</footer>
+
+<!----------------------------------------- SCRIPT ---------------------------------->
+
+<script>const labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'];
+  const usdToEur = [0.89, 0.91, 0.92, 0.88, 0.87, 0.86];
+  const usdToGbp = [0.78, 0.76, 0.75, 0.74, 0.73, 0.72];
+  const usdToMxn = [19.92, 19.84, 19.76, 19.68, 19.60, 19.52];
+  const usdToPln = [3.81, 3.79, 3.77, 3.75, 3.73, 3.71];
+  const usdToDkk = [6.16, 6.14, 6.12, 6.10, 6.08, 6.06];
+  const usdToNok = [8.43, 8.41, 8.39, 8.37, 8.35, 8.33];
+  const usdToIls = [3.28, 3.26, 3.24, 3.22, 3.20, 3.18];
+  const usdToTry = [8.57, 8.55, 8.53, 8.51, 8.49, 8.47];
+  const usdToZar = [14.45, 14.42, 14.39, 14.36, 14.33, 14.30];
+  
+  const ctx = document.getElementById('forex-chart').getContext('2d');
+  const forexChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+          labels: labels,
+          datasets: [{
+              label: 'USD to EUR',
+              data: usdToEur,
+              borderColor: 'blue',
+              fill: false
+          }, {
+              label: 'USD to GBP',
+              data: usdToGbp,
+              borderColor: 'red',
+              fill: false
+          }, {
+              label: 'USD to MXN',
+              data: usdToMxn,
+              borderColor: 'green',
+              fill: false
+          }, {
+              label: 'USD to PLN',
+              data: usdToPln,
+              borderColor: 'purple',
+              fill: false
+          }, {
+              label: 'USD to DKK',
+              data: usdToDkk,
+              borderColor: 'orange',
+              fill: false
+          }, {
+              label: 'USD to NOK',
+              data: usdToNok,
+              borderColor: 'brown',
+              fill: false
+          }, {
+              label: 'USD to ILS',
+              data: usdToIls,
+              borderColor: 'gray',
+              fill: false
+          },  {
+              label: 'USD to TRY',
+              data: usdToTry,
+              borderColor: 'cyan',
+              fill: false
+          }, {
+              label: 'USD to ZAR',
+              data: usdToZar,
+              borderColor: 'magenta',
+              fill: false
+          }]
+      },
+      options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+              x: {
+                  title: {
+                      display: true,
+                      text: 'Month'
+                  }
+              },
+              y: {
+                  title: {
+                      display: true,
+                      text: 'Exchange Rate'
+                  }
+              }
+          },
+          animation: {
+              onComplete: function () {
+                  const chart = this.chart;
+                  const yAxis = chart.scales['y-axis-0'];
+                  const xOffset = yAxis.right;
+                  const top = yAxis.top;
+                  const bottom = yAxis.bottom;
+  
+                  chart.ctx.save();
+                  chart.ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
+                  chart.ctx.beginPath();
+                  for (let i = 0; i < labels.length - 1; i++) {
+                      const x1 = chart.scales['x-axis-0'].getPixelForTick(i);
+                      const x2 = chart.scales['x-axis-0'].getPixelForTick(i + 1);
+                      const y1 = chart.scales['y-axis-0'].getPixelForValue(usdToEur[i]);
+                      const y2 = chart.scales['y-axis-0'].getPixelForValue(usdToEur[i + 1]);
+                      chart.ctx.moveTo(x1, y1);
+                      chart.ctx.lineTo(x2, y2);
+                  }
+                  chart.ctx.stroke();
+                  chart.ctx.restore();
+  
+                  const binanceUp = new Image();
+                  binanceUp.src = 'https://www.binance.com/favicon.ico';
+                  binanceUp.onload = function () {
+                      const binanceDown = new Image();
+                      binanceDown.src = 'https://www.binance.com/favicon.ico';
+                      binanceDown.onload = function () {
+                          const scale = (top - bottom) / (this.height * 2);
+                          chart.ctx.save();
+                          for (let i = 0; i < labels.length - 1; i++) {
+                              const x = chart.scales['x-axis-0'].getPixelForTick(i);
+                              const y = chart.scales['y-axis-0'].getPixelForValue(usdToEur[i]);
+                              if (usdToEur[i + 1] > usdToEur[i]) {
+                                  chart.ctx.drawImage(binanceUp, x - xOffset, y - this.height * scale, this.width * scale, this.height * scale);
+                              } else {
+                                  chart.ctx.drawImage(binanceDown, x - xOffset, y, this.width * scale, this.height * scale);
+                              }
+                          }
+                          chart.ctx.restore();
+                      };
+                  };
+              }
+          }
+      }
+  });
+  
+  
+  </script>
+
+  <script>document.getElementById('copy-button').addEventListener('click', function () {
+    const referralCode = document.getElementById('referral-code').innerText;
+    navigator.clipboard.writeText(referralCode).then(function () {
+        alert('Referral code copied!');
+    }, function (err) {
+        console.error('Failed to copy: ', err);
+    });
+});
+
+document.getElementById('whatsapp').addEventListener('click', function () {
+    const referralCode = document.getElementById('referral-code').innerText;
+    const message = `Use my referral code ${referralCode} to join!`;
+    window.open(`https://wa.me/?text=${encodeURIComponent(message)}`);
+});
+
+document.getElementById('twitter').addEventListener('click', function () {
+    const referralCode = document.getElementById('referral-code').innerText;
+    const message = `Use my referral code ${referralCode} to join!`;
+    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(message)}`);
+});
+
+document.getElementById('instagram').addEventListener('click', function () {
+    const referralCode = document.getElementById('referral-code').innerText;
+    const message = `Use my referral code ${referralCode} to join!`;
+    window.open(`https://www.instagram.com/?text=${encodeURIComponent(message)}`);
+});
+
+document.getElementById('facebook').addEventListener('click', function () {
+    const referralCode = document.getElementById('referral-code').innerText;
+    const message = `Use my referral code ${referralCode} to join!`;
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=&t=${encodeURIComponent(message)}`);
+});
+
+</script>
+<script src="script.js"></script>
+</body>
+</html>
